@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset ="UTF-8" />
+    
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Carlos Triana Fernández" />
+    <meta name ="description" content ="ejemplos de código en Rust" />
+    <meta name ="keywords" content ="Rust, lenguajes de programación, programación, desarrollador, código Rust, codigo de ejemplo, aprende Rust, aprender a programar, ejemplos de Rust" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <title>Rust - Ejemplos de código</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+</head>
+
+<body>
+    <header>
+        <h1>RUST</h1>
+            <img src="multimedia/Rust_logo.png" alt="Logo de RUST" />
+        <nav>
+            <a title="Home"
+                accesskey="H"
+                tabindex="1"
+                href="index.html">Home</a>
+            <a title="Aprende"
+                accesskey="A"
+                tabindex="2"
+                href="aprende.html">Aprende RUST</a>
+            <a title="Ejemplos"
+                accesskey="E"
+                tabindex="3"
+                href="ejemplos.html">Aprende con Ejemplos</a>
+            <a title="Contact"
+                accesskey="C"
+                tabindex="4"
+                href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>¡Comenzar!</h2>
+                <p>Rust posee un ecosistema en expansión de bibliotecas para la web fáciles de usar. Aquí tienes dos ejemplos:</p>
+
+
+            <!--Hacer tablas accesibles
+            atributo scope = fila o columna al header
+            atributo headers que hará referencia al elemento tipo header
+            atributo id identificador-->
+            <table>
+                <caption> Tabla de tipos de valores</caption>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descripción</th>
+                    <th>Ejemplos</th>
+                </tr>
+                <tr>
+                    <td>bool</td>
+                    <td>Boolean value</td>
+                    <td>true, false</td>
+                </tr>
+                <tr>
+                    <td>u8</td>
+                    <td>Unsigned 8-bit integer (a byte)</td>
+                    <td>1 (Inferred type)</td>
+                </tr>
+                <tr>
+                    <td>i8 - i128</td>
+                    <td>Signed integers, up to 128 bits</td>
+                    <td>7i128 (Explicit type)</td>
+                </tr>
+                <tr>
+                    <td>u16 - u128</td>
+                    <td>Unsigned integers, up to 128 bits</td>
+                    <td>14usize (Explicit type)</td>
+                </tr>
+                <tr>
+                    <td>u-isize</td>
+                    <td>Pointer-sized integers (size depends on platform)</td>
+                    <td>14usize (Explicit type)</td>
+                </tr>
+                <tr>
+                    <td>f32 f64</td>
+                    <td>Floating-point numbers</td>
+                    <td>-3f32 (Explicit type)</td>
+                </tr>
+                
+            </table>
+        </section>
+        
+        <section>
+            <h2>Hello world!</h2>
+                <pre>
+// This is the main function
+fn main() {
+// Statements here are executed when the compiled binary is called
+
+// Print text to the console
+println!("Hello World!");
+}
+                </pre>
+                <p>Más ejemplos en <a href="https://doc.rust-lang.org/stable/rust-by-example/" target="_blank">rust-lang.org</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>¿Estás listo para comenzar?</h2>
+        <p>Accede a la <a href="https://www.rust-lang.org/es/learn/get-started" target="_blank">página oficial de rust.</a></p>
+    </footer>
+</body>
+</html>

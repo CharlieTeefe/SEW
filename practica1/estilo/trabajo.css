@@ -1,0 +1,11 @@
+/**************************
+ Carlos Triana - UO283428
+ Descripción de los estilos
+ **************************/
+ header {background-color: aliceblue;} /* a=0 b=0 c=1 -> specificity =   1 */
+ footer {background-color: azure;} /* a=0 b=0 c=1 -> specificity =   1 */
+ section {background-color: blanchedalmond;} /* a=0 b=0 c=1 -> specificity =   1 */
+
+ ul li{display: run-in;}/* a=0 b=0 c=2 -> specificity =   2 */
+
+ nav{margin-top: 3vh; margin-right: 2vw; margin-bottom: 3vh; margin-left: 2vw; border: 0.1em; padding: 0.5em;}

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset ="UTF-8" />
+    
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Carlos Triana Fernández" />
+    <meta name ="description" content ="Página de contacto y ayuda sobre el lenguaje Rust" />
+    <meta name ="keywords" content ="Rust, lenguajes de programación, programación, desarrollador, ayuda Rust, contacto Rust, asistencia Rust" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!-- Datos que describen el documento -->
+    <title>Rust - contacto</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+</head>
+
+<body>
+    <header>
+        <h1>RUST</h1>
+            <img src="multimedia/Rust_logo.png" alt="Logo de RUST" />
+        <nav>
+            <a title="Home"
+                accesskey="H"
+                tabindex="1"
+                href="index.html">Home</a>
+            <a title="Aprende"
+                accesskey="A"
+                tabindex="2"
+                href="aprende.html">Aprende RUST</a>
+            <a title="Ejemplos"
+                accesskey="E"
+                tabindex="3"
+                href="ejemplos.html">Aprende con Ejemplos</a>
+            <a title="Contact"
+                accesskey="C"
+                tabindex="4"
+                href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+                <p>Si tienes cualquier duda o necesitas ayuda con Rust, contáctanos e intentaremos ayudarte.</p>
+
+            <h2>Formulario de contacto</h2>
+                <form name ="datos">
+                    <p><label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Escriba el nombre" required /></p>
+                    
+                    <p><label for="apellido">Apellido:</label>
+                    <input id="apellido" type="text" placeholder="Escriba el apellido" required /></p>
+                    
+                    <p><label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Escriba el email de contacto" required /></p>
+
+                    <p><label for="problema">Describe brevemente el problema (Max: 1000):</label>
+                        <p><textarea id="problema" maxlength=1000 placeholder="Escriba una descripción del problema" required></textarea></p>
+                    <fieldset> <!--esta bien-->
+                        <legend> ¿Estas interesado en recibir nuestra newsletter por email?</legend>  <!--my radio buttons not working--> 
+                        <p><input id="masinfo" type="radio" /> 
+                        <label for="masinfo"> Si, quiero más información </label></p> 
+                        <p><input id="nomasinfo" type="radio" />
+                        <label for="nomasinfo">No, gracias</label></p>
+                    </fieldset>
+                    <p><input type="submit" value="Enviar"/></p>
+                </form>
+        </section>
+
+        <section>
+            <h2>¡Enhorabuena!</h2>
+            <p>Ya estás un paso más cerca de convertirte en un "Rustaceo"</p>
+            <img src="multimedia/Rustacean.png" alt="Cangrejo naranja que representa a los programadores de RUST"/>
+        </section>
+    </main>
+    <footer>
+        <h2>¿Estás listo para comenzar?</h2>
+        <p>Accede a la <a href="https://www.rust-lang.org/es/learn/get-started" target="_blank">página oficial de rust.</a></p>
+    </footer>
+</body>
+</html>
