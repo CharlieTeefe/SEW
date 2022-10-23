@@ -1,0 +1,52 @@
+/**************************
+ Carlos Triana - UO283428
+ Descripción de los estilos
+ **************************/
+ /* a=0 b=0 c=1 -> specificity =   1 */
+ body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #1d1d1d;
+     background-color: rgb(221, 221, 221);
+ }
+ 
+ header {background-color: aliceblue;} /* a=0 b=0 c=1 -> specificity =   1 */
+ footer {background-color: azure;} /* a=0 b=0 c=1 -> specificity =   1 */
+ section {background-color: blanchedalmond;} /* a=0 b=0 c=1 -> specificity =   1 */
+
+ ul li{display: run-in;}/* a=0 b=0 c=2 -> specificity =   2 */
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+ nav{margin-top: 3vh;margin-right: 2vw;margin-bottom: 3vh;margin-left: 2vw;border: 10em;padding: 0.5em;}
+
+ nav a:link, a:visited{
+    background-color: white;
+    color:black;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: inline-block;
+ }
+
+ nav a:hover, a:active{
+    background-color: grey;
+
+ }
+
+ ul{
+    background: grey;
+    padding: 1em;
+ }
+
+ ul li{
+    background: white;
+    color: black;
+    padding: 0.1em;
+    margin-left: 1em;
+ }
+
+ table, th{
+    border: 0.2em solid;
+ }
+
+ table td{
+    border: 0.1em solid;
+ }
