@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset ="UTF-8" />
+    
+    <meta name ="author" content ="Carlos Triana Fernández" />
+    <meta name ="description" content ="Ejemplos de código en Rust" />
+    <meta name ="keywords" content ="Rust, lenguajes de programación, programación, desarrollador, código Rust, codigo de ejemplo, aprende Rust, aprender a programar, ejemplos de Rust" />
+
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>Rust - Ejemplos de código</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+</head>
+
+<body>
+    <header>
+        <h1>RUST</h1>
+            <img src="multimedia/Rust_logo.png" alt="Logo de RUST" />
+        <nav>
+            <a title="Home"
+                accesskey="H"
+                tabindex="1"
+                href="index.html">Home</a>
+            <a title="Aprende"
+                accesskey="A"
+                tabindex="2"
+                href="aprende.html">Aprende RUST</a>
+            <a title="Ejemplos"
+                accesskey="E"
+                tabindex="3"
+                href="ejemplos.html">Aprende con Ejemplos</a>
+            <a title="Contact"
+                accesskey="C"
+                tabindex="4"
+                href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>¡Comenzar!</h2>
+                <p>Antes de empezar con este lenguaje de programación, asegúrate de conocer las bases de la sintaxis y sus las principales funciones.
+                    Aquí os mostramos unos ejemplos y características muy importantes.</p>
+                    <p>Rust está fuertemente tipado y tipado estáticamente, donde todos
+                     los tipos de variables deben conocerse durante la compilación, y asignar un valor de un tipo diferente a una variable dará como resultado un error de compilación. 
+                     El tipo entero predeterminado es i32, y el tipo de coma flotante predeterminado es f64. Si el tipo de un número literal no se proporciona explícitamente, se deduce del 
+                     contexto o se utiliza el tipo predeterminado.</p>
+
+            <table>
+                <caption> Tabla de tipos de valores</caption>
+                <tr>
+                    <th scope="col" id="tipo">Tipo</th>
+                    <th scope="col" id="descripcion">Descripción</th>
+                    <th scope="col" id="ejemplo">Ejemplos</th>
+                </tr>
+                <tr>
+                    <td headers="tipo">bool</td>
+                    <td headers="descripcion">valor Booleano</td>
+                    <td headers="ejemplo">true, false</td>
+                </tr>
+                <tr>
+                    <td headers="tipo">u8</td>
+                    <td headers="descripcion">Entero 8-bit sin signo (1 byte)</td>
+                    <td headers="ejemplo">1 (tipo inferido)</td>
+                </tr>
+                <tr>
+                    <td headers="tipo">i8 - i128</td>
+                    <td headers="descripcion">Entero con signo, hasta 128 bits</td>
+                    <td headers="ejemplo">7i128 (tipo explícito)</td>
+                </tr>
+                <tr>
+                    <td headers="tipo">u16 - u128</td>
+                    <td headers="descripcion">Entero con signo, hasta 128 bits</td>
+                    <td headers="ejemplo">14usize (tipo explícito)</td>
+                </tr>
+                <tr>
+                    <td headers="tipo">u-isize</td>
+                    <td headers="descripcion">Entero del tamaño del puntero (el tamaño depende de la plataforma)</td>
+                    <td headers="ejemplo">14usize (tipo explícito)</td>
+                </tr>
+                <tr>
+                    <td headers="tipo">f32 f64</td>
+                    <td headers="descripcion">Numeros de coma flotante</td>
+                    <td headers="ejemplo">-3f32 (tipo explícito)</td>
+                </tr>
+                
+            </table>
+        </section>
+        
+        <section>
+            <h2>Hello world!</h2>
+            <p>El mejor ejemplo con el que empezar es siempre el hello world. Con Rust es muy 
+                sencillo crear tus primeras lienas de código.</p>
+                <pre>
+// This is the main function
+fn main() {
+// Statements here are executed when the compiled binary is called
+
+// Print text to the console
+println!("Hello World!");
+}
+                </pre>
+
+                <h2>Secuencia de fibonacci</h2>
+                <p>Aquí tenemos un ejemplo más complejo, pero que no pierde la sencillez propia
+                     de este lenguaje.</p>
+                <pre>
+pub fn fibonacci_reccursive(n: i32) -> u64 {
+    if n &lt; 0 {
+        panic!("{} Wow, esto es un número negativo!", n);
+    }
+    match n {
+        0 => panic!("Lo sentimos, cero no es un valor válido"),
+        1 | 2 => 1,
+        3 => 2,
+        _ => fibonacci_reccursive(n - 1) + fibonacci_reccursive(n - 2)
+    }
+}
+                </pre>
+                <p>Más ejemplos en <a href="https://doc.rust-lang.org/stable/rust-by-example/" target="_blank">rust-lang.org</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>¿Estás listo para comenzar?</h2>
+        <p>Accede a la <a href="https://www.rust-lang.org/es/learn/get-started" target="_blank">página oficial de rust.</a></p>
+    </footer>
+</body>
+</html>
